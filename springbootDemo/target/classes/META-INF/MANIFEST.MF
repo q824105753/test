@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Class-Path: snakeyaml-1.19.jar spring-context-5.0.7.RELEASE.jar jackso
+ n-datatype-jdk8-2.9.6.jar spring-boot-starter-web-2.0.3.RELEASE.jar u
+ nbescape-1.1.5.RELEASE.jar spring-boot-starter-2.0.3.RELEASE.jar dom4
+ j-1.6.1.jar spring-boot-starter-logging-2.0.3.RELEASE.jar hibernate-c
+ ommons-annotations-5.0.1.Final.jar spring-orm-5.0.7.RELEASE.jar jacks
+ on-datatype-jsr310-2.9.6.jar jboss-logging-3.3.2.Final.jar tomcat-emb
+ ed-websocket-8.5.31.jar spring-boot-2.0.3.RELEASE.jar jandex-2.0.3.Fi
+ nal.jar jackson-annotations-2.9.0.jar spring-boot-starter-tomcat-2.0.
+ 3.RELEASE.jar spring-boot-starter-json-2.0.3.RELEASE.jar mysql-connec
+ tor-java-5.1.46.jar jackson-core-2.9.6.jar jackson-databind-2.9.6.jar
+  spring-beans-5.0.7.RELEASE.jar springloaded-1.2.6.RELEASE.jar logbac
+ k-classic-1.2.3.jar spring-boot-devtools-2.0.3.RELEASE.jar hibernate-
+ validator-6.0.10.Final.jar aspectjweaver-1.8.13.jar spring-aspects-5.
+ 0.7.RELEASE.jar slf4j-api-1.7.25.jar spring-webmvc-5.0.7.RELEASE.jar 
+ antlr-2.7.7.jar javax.transaction-api-1.2.jar validation-api-2.0.1.Fi
+ nal.jar logback-core-1.2.3.jar spring-tx-5.0.7.RELEASE.jar spring-web
+ -5.0.7.RELEASE.jar thymeleaf-3.0.9.RELEASE.jar javassist-3.22.0-GA.ja
+ r log4j-to-slf4j-2.10.0.jar log4j-api-2.10.0.jar spring-data-jpa-2.0.
+ 8.RELEASE.jar HikariCP-2.7.9.jar spring-expression-5.0.7.RELEASE.jar 
+ spring-data-commons-2.0.8.RELEASE.jar attoparser-2.0.4.RELEASE.jar ju
+ l-to-slf4j-1.7.25.jar spring-jcl-5.0.7.RELEASE.jar spring-boot-autoco
+ nfigure-2.0.3.RELEASE.jar hibernate-core-5.2.17.Final.jar spring-jdbc
+ -5.0.7.RELEASE.jar thymeleaf-extras-java8time-3.0.1.RELEASE.jar tomca
+ t-embed-el-8.5.31.jar tomcat-embed-core-8.5.31.jar spring-boot-starte
+ r-jdbc-2.0.3.RELEASE.jar thymeleaf-spring5-3.0.9.RELEASE.jar spring-a
+ op-5.0.7.RELEASE.jar classmate-1.3.4.jar jackson-module-parameter-nam
+ es-2.9.6.jar hibernate-jpa-2.1-api-1.0.2.Final.jar javax.annotation-a
+ pi-1.3.2.jar spring-core-5.0.7.RELEASE.jar spring-boot-starter-data-j
+ pa-2.0.3.RELEASE.jar spring-boot-starter-aop-2.0.3.RELEASE.jar spring
+ -boot-starter-thymeleaf-2.0.3.RELEASE.jar
+Main-Class: com.qy.SpringbootDemoApplication
+

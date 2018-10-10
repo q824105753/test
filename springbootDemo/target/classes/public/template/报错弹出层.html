@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>报错弹出层</title>
+<link href="../css/index.css" rel="stylesheet" type="text/css"/>
+<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../js/pop.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top-left"><a class="logo" href="../index.html"></a></div>
+  <div class="top-right"><p>2018-09-10 11:26:22</p></div>
+</div>
+<div class="box2">
+  <div class="little-time">
+    <h4>04:21</h4>
+    <h5>剩余时间</h5>
+  </div>
+  <div class="title">
+    
+  </div>
+  <div class="empty40"></div>
+  <h2><a href="javascript:void(0)" onclick="pupopen()">银行卡识别</a></h2>
+  <h2><a href="javascript:void(0)" onclick="pupopen2()">支付密码识别</a></h2>
+</div>
+
+<div id="modal-form" class="modal" >
+    <div class="modal-dialog" style="width:800px;margin-left:-400px;margin-top:-220px">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <h3>未识别到银行卡插入，请重试</h3>
+                <div class="sure"><a href="javascript:void(0)" onclick="pupclose()">确认</a></div>
+            </div>
+            
+        </div><!--/.modal-content-->
+    </div><!--/.modal-dialog-->
+</div><!--/.modal-->
+
+<div id="modal-form2" class="modal" >
+    <div class="modal-dialog" style="width:800px;margin-left:-400px;margin-top:-220px">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <h3>支付密码错误，请重试</h3>
+                <div class="sure"><a href="javascript:void(0)" onclick="pupclose2()">确认</a></div>
+            </div>
+            
+        </div><!--/.modal-content-->
+    </div><!--/.modal-dialog-->
+</div><!--/.modal-->
+</body>
+</html>

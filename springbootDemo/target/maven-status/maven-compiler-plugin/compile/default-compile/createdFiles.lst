@@ -1,0 +1,11 @@
+com\qy\entity\Student.class
+com\qy\dao\SclassRepository.class
+com\qy\entity\Test.class
+com\qy\service\impl\SclassServiceImpl.class
+com\qy\service\impl\StudentServiceImpl.class
+com\qy\service\SclassService.class
+com\qy\service\StudentService.class
+com\qy\dao\StudentRepository.class
+com\qy\entity\Sclass.class
+com\qy\controller\StudentController.class
+com\qy\SpringbootDemoApplication.class

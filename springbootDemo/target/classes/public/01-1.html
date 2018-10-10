@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>水费</title>
+<link href="../css/index.css" rel="stylesheet" type="text/css"/>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/picker.js"></script>
+<script src="../js/select.js"></script>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script>
+  $(function(){
+	
+	$("#d1").select({
+        title: "请选择所在城市",
+        autoClose:true,
+        
+        items: ['长沙市','常德市','常德市常德市市','xx市','xx市','xx市','xx市'],
+        onChange: function(d) {
+         //$.alert("你选择了"+d.values);
+        }
+      });
+	  
+	$("#d2").select({
+        title: "请选择缴费单位",
+        autoClose:true,
+        
+        items: ['长沙市自来水公司','单位2','单位3'],
+        onChange: function(d) {
+         //$.alert("你选择了"+d.values);
+        }
+      });
+      
+	function ons(){
+		$("#tel-num").click(function(){
+		var val = $(this).text();
+		$(#d3).val(val);
+		});
+	}
+	
+	
+	
+      
+	  });    
+      
+</script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top-left"><a class="logo" href="../index.html"></a></div>
+  <div class="top-right"><p>2018-09-10 11:26:22</p></div>
+</div>
+<div class="box2">
+  <div class="little-time">
+    <h4>03:16</h4>
+    <h5>剩余时间</h5>
+  </div>
+  <div class="title">
+    <h4>水费</h4>
+  </div>
+  <div class="box5">
+    <div class="tel-left">
+      <div class="search-result">
+        <div class="result">
+            <div class="result-label"><label>城市</label></div>
+            <div class="result-txt"><input class="weui_input" type="text" placeholder="请选择所在城市" value="长沙市" id='d1' /></div>
+        </div><!--/.result-->
+        <div class="result">
+            <div class="result-label"><label>缴费单位</label></div>
+            <div class="result-txt"><input class="weui_input" type="text" placeholder="请选择缴费单位" value="长沙市自来水公司" id='d2' /></div>
+        </div><!--/.result-->
+        <div class="result">
+            <div class="result-label"><label>客户号</label></div>
+            <div class="result-txt"><input class="weui_input" type="text" placeholder="请填写您的缴费户号" value="" id="d3"/></div>
+        </div><!--/.result-->
+        <div class="sure"><a href="01-2.html">查询</a></div>
+      </div>
+    </div>
+    <div class="tel-right">
+      <ul class="tel-num" id="tel-num">
+        <li><a href="javascript:;" onclick="ons(this);">1</a></li>
+        <li><a href="javascript:;" onclick="ons(this);">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">.</a></li>
+        <li><a href="#">0</a></li>
+        <li><a href="#">清除</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+</div>
+<div class="box3"><a class="goback" href="../index.html">首页</a></div>
+</body>
+</html>

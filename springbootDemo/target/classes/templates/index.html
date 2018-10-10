@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/picker.js"></script>
+    <script src="js/select.js"></script>
+</head>
+<body>
+<script>
+    function tianjia(obj){
+        var xianshi= $('#jiaofei').val();
+        var hao = $(obj).text();
+        $('#jiaofei').val(xianshi+hao);
+    }
+    function qingchu(obj){
+        var xianshi= $('#jiaofei').val();
+//      xianshi.length-1
+        var hao = xianshi.substring(0,xianshi.length-1);
+        $('#jiaofei').val(hao);
+    }
+</script>
+<form method="post">
+    <table cellpadding="2" border="1" style="text-align: center">
+        <a href="/toAdd">添加</a>
+        <tr>
+            <td>序号</td>
+            <td>名字</td>
+            <td>年龄</td>
+            <td>班级</td>
+            <td>操作</td>
+        </tr>
+        <tr th:each="s:${slist}">
+            <td th:text="${s.sid}"></td>
+            <td th:text="${s.sname}"></td>
+            <td th:text="${s.sage}"></td>
+            <td th:text="${s.cname}"></td>
+            <td>
+                <a href="javascript:;" th:id="${s.sid}"  onclick="update(this)">修改</a>|
+                <a href="javascript:;" th:id="${s.sid}" onclick="del(this)">删除</a>
+            </td>
+        </tr>
+    </table>
+    <div class="tel-right">
+        <ul class="tel-num">
+            <li><a href="javascript:;" onclick="tianjia(this);">1</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">2</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">3</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">4</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">5</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">6</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">7</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">8</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">9</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">.</a></li>
+            <li><a href="javascript:;" onclick="tianjia(this);">0</a></li>
+            <li><a href="javascript:;" onclick="qingchu(this);">清除</a></li>
+        </ul>
+    </div>
+</form>
+
+<script src="js/jquery.js"></script>
+<script>
+    function del(obj) {
+        window.location.href="delete?sid="+$(obj).attr("id");
+    }
+    function update(obj){
+        window.location.href="load?sid="+$(obj).attr("id");
+    }
+</script>
+
+</body>
+</html>
